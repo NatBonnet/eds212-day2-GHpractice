@@ -4,8 +4,8 @@ format: html
 editor: visual
 ---
 
-### BLah Blah BlAh 
-#meep moop
+### Palmer Penguin example
+
 
 ```{r}
 ggplot(data = penguins, aes(x= body_mass_g, y = flipper_length_mm)) +
