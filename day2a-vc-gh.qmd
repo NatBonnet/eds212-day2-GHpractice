@@ -5,4 +5,18 @@ editor: visual
 ---
 
 ### BLah Blah BlAh 
-meep moop
+#meep moop
+
+```{r}
+ggplot(data = penguins, aes(x= body_mass_g, y = flipper_length_mm)) +
+  geom_point(aes(color = species)) +
+  scale_color_manual(values = c("deeppink", "purple", "cyan4")) +
+  labs(x = "Flipper length (mm)", 
+       y = "Body mass (g)", 
+       title = "Palmer Penguin Size Measurements", 
+       subtitle = "Palmer Archipelago, Antarctica (2007 - 2009)", 
+       caption = "Collected by Dr. Kristen Gorman and colleagues at Palmer Station LTER") +
+  facet_wrap(~island) +
+  theme_minimal()
+```
+
